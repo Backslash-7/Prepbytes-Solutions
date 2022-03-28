@@ -1,0 +1,22 @@
+#include <bits/stdc++.h>
+using namespace std;
+  
+  int main()
+  {
+    int n,h,m;
+    cin>>n;
+    for(int i=0;i<n;i++)
+    {
+      cin>> h >> m ;
+      int hrs = h * (360/12) + (m*360)/(12*60);
+      int min = m * (360/60);
+      int res = abs(hrs - min);
+      if(res > 180)
+      {
+        res = 360 - res; 
+      }
+      cout << res<<endl;
+    }
+    
+    return 0;
+  }
