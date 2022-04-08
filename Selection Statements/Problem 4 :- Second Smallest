@@ -1,0 +1,21 @@
+#include <bits/stdc++.h>
+using namespace std;
+  
+int main()
+  {
+    //write your code here
+    int x,y,z;
+    cin>>x>>y>>z;
+    if((x<y && x>z) || (x>y && x<z))
+    {
+      cout<<x;
+    }
+    else if((x>y && y>z) || (z>y && x<y))
+    {
+      cout<<y;
+    }
+    else
+      cout<<z;
+    
+    return 0;
+  }
