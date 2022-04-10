@@ -1,0 +1,30 @@
+#include <bits/stdc++.h>
+  using namespace std;
+  
+  int main()
+  {
+    //write your code here
+    int t,num,rem,count;
+    cin>>t;
+    while(t--)
+    {
+      cin>>num;
+      rem = num%10;
+      switch (rem) 
+      {
+        case 0:
+            count = 0;
+            break;
+ 
+        case 5:
+            count = 1;
+            break;
+ 
+       default:
+            count = -1;
+    }
+      cout<<count<<endl;
+    }
+    
+    return 0;
+  }
