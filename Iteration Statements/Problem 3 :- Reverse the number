@@ -1,0 +1,16 @@
+#include <bits/stdc++.h>
+  using namespace std;
+  
+  int main()
+  {
+    int x,r_num=0;
+    cin>>x;
+    while(x>0)
+    {
+      int rem = x%10;
+      r_num = r_num*10 + rem;
+      x=x/10;
+    }
+    cout<<r_num;
+    return 0;
+  }
