@@ -12,5 +12,4 @@ int main() {
 	    cout<<x<<" is equal to "<<y;
 
 return 0;
-
 }
