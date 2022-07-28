@@ -12,6 +12,5 @@
       cout<< pair <<endl;
       
     }
-    
     return 0;
   }
