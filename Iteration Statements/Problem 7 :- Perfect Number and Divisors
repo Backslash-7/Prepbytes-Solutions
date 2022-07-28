@@ -24,7 +24,6 @@
       {
         cout<<"false"<<endl;
       }
-    }
-    
+    } 
     return 0;
   }
