@@ -1,0 +1,36 @@
+#include <bits/stdc++.h>
+ using namespace std;
+
+  int check(int arr[],int n)
+  {
+    for(int i=n-1; i>=0; i--)
+      {
+        if(arr[i]==1)
+        {
+          return i;
+        }
+      }
+      return -1;
+  }
+  
+  
+  int main()
+  {
+    //write your code here
+    int  t;
+    cin>>t;
+    while(t--)
+    {
+      int n;
+      cin>>n;
+      int arr[n];
+      for(int i=0; i<n; i++)
+      {
+        cin>>arr[i];
+      }
+      int res = check(arr,n);
+      cout<<res<<endl;
+    }
+    
+    return 0;
+  }
