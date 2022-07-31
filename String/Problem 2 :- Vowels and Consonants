@@ -1,0 +1,28 @@
+#include <bits/stdc++.h>
+  using namespace std;
+  
+  int main()
+  {
+    //write your code here
+    int t;
+    cin>>t;
+    while(t--)
+    {
+      string str;
+      cin>>str;
+      int count=0;
+      for(int i=0;i<str.length();i++)
+      {
+        if(str[i]=='A' || str[i]=='E' ||
+        str[i]=='I' || str[i]=='O' || str[i]=='U')
+        {
+          count++;
+        }
+      }
+      int n=str.length();
+      int cons = n-count;
+      cout<<count<<" "<<cons<<endl;
+    }
+    
+    return 0;
+  }
