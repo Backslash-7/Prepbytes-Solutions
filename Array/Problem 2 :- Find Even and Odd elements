@@ -3,7 +3,6 @@
   
   int main()
   {
-    //write your code here
     int n;
     cin>>n;
     int arr[n];
