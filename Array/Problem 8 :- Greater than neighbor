@@ -1,0 +1,39 @@
+#include <bits/stdc++.h>
+  using namespace std;
+  
+  int main()
+  {
+    //write your code here
+    int t;
+    cin>>t;
+    while(t--)
+    {
+      int n;
+      cin>>n;
+      int arr[n];
+      for(int i=0;i<n;i++)
+      {
+        cin>>arr[i];
+      }
+      vector<int> res;
+      if(arr[0]>arr[1])
+          res.push_back(0);
+      for(int i=1;i<n-1;i++)
+      {
+        if(arr[i]>arr[i+1] and arr[i]>arr[i-1])
+        res.push_back(i);
+      }
+      if(arr[n-1]>arr[n-2])
+      res.push_back(n-1);
+      if(res.size()==0)
+      cout<<"-1";
+      else{
+        for(int i=0;i<res.size();i++)
+        {
+          cout<<res[i]<<" ";
+        }
+      }
+      cout<<endl;
+    }
+    return 0;
+  }
