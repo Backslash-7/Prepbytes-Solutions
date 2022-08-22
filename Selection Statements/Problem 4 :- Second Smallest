@@ -3,7 +3,6 @@ using namespace std;
   
 int main()
   {
-    //write your code here
     int x,y,z;
     cin>>x>>y>>z;
     if((x<y && x>z) || (x>y && x<z))
