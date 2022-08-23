@@ -1,0 +1,28 @@
+#include <bits/stdc++.h>
+  using namespace std;
+  
+  int main()
+  {
+    //write your code here
+    int t;
+    cin>>t;
+    while(t--)
+    {
+      int n;
+      cin>>n;
+      int arr[n-1];
+      for(int i=0;i<n-1;i++)
+      {
+        cin>>arr[i];
+      }
+      int res=n,i1=1;
+      for(int i=0;i<n-1;i++)
+      {
+        res^=arr[i];
+        res^=i1;
+        i1++;
+      }
+      cout<<res<<endl;
+    }
+    return 0;
+  }
